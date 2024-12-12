@@ -8,16 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        NavigationStack {
+            Form {
+                Section("Unit input") {
+                    
+                }
+                
+                Section("Enter a value") {
+                    
+                }
+                
+                Section("Output unit") {
+                    
+                }
+                
+                Section("output of the conversion") {
+                    
+                }
+            }
+            .navigationTitle("Unit Conversions")
         }
-        .padding()
     }
 }
+
 
 #Preview {
     ContentView()
