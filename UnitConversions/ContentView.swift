@@ -5,16 +5,39 @@
 //  Created by Marko Zivanovic on 12.12.24..
 //
 
+// Celsius -> Fahrenheit
+// Celsius -> Kelvin
+// Kelvin -> Celsius
+// Kelvin -> Fahrenheit
+// Fahrenheit -> Kelvin
+// Fahrenheit -> Celsius
+
 import SwiftUI
 
 struct ContentView: View {
     
     @State private var inputUnit = 0.0
     @State private var outputUnit = 0.0
+    @State private var celsiusInputUnit = 0.0
+    @State private var celsiusToFahrenheitconvertResult = 0.0
     
     let temperatureUnits = ["Celsius", "Fahrenheit", "Kelvin"]
     @State private var selectedInputTemperatureUnits = "Celsius"
     @State private var selectedOutputTemperatureUnit = "Fahrenheit"
+    
+//    func convertCelsiusToFahrenheit(celsius: Double) -> Double {
+//        return celsiusInputUnit * 9.0 / 5.0 + 32.0
+//    }
+//    
+//    func convertCelsiusToKelvin(celsius: Double) -> Double {
+//        return celsiusInputUnit + 273.15
+//    }
+    
+    func convertCelsiusToFahrenheit() -> Double {
+        let celsiusToFahrenheit = celsiusInputUnit * 9.0 / 5.0 + 32.0
+        return celsiusToFahrenheitconvertResult
+    }
+    
     
     var body: some View {
         
